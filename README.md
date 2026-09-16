@@ -1,16 +1,30 @@
-# React + Vite
+# 🛒 E-Commerce Product Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully mobile-responsive product landing page built with **React**, **Tailwind CSS**, and containerized using **Docker**. Features interactive real-time category and price filtering with persistent user settings via custom hooks.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Interactive Product Filtering:** Filter products dynamically by category and max price range.
+- **State Persistence:** Uses custom `useLocalStorage` React hook to retain filter choices upon browser refresh.
+- **Mobile Responsive:** Clean, modern layout built using Tailwind CSS that works seamlessly across all screen sizes.
+- **Modular Codebase:** Clean component-driven architecture separating UI components, mock datasets, and custom hooks.
+- **Dockerized Setup:** Multi-stage Docker setup with Nginx for fast and production-ready local deployment.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js, Tailwind CSS
+- **State Management:** Custom React Hooks (`useLocalStorage`)
+- **Containerization:** Docker, Docker Compose, Nginx
+
+---
+
+## 🚀 Quick Start (Using Docker)
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR-USERNAME/ecommerce-landing-page.git](https://github.com/YOUR-USERNAME/ecommerce-landing-page.git)
+   cd ecommerce-landing-page
