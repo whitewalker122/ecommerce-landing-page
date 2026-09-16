@@ -1,16 +1,16 @@
 # 🛒 E-Commerce Product Landing Page
 
-A modern, fully mobile-responsive product landing page built with **React**, **Tailwind CSS**, and containerized using **Docker**. Features interactive real-time category and price filtering with persistent user settings via custom hooks.
+A modern, fully mobile-responsive product landing page built with **React**, **Tailwind CSS**, and containerized using **Docker**. Features interactive real-time category and price filtering with persistent user settings via custom React hooks.
 
 ---
 
 ## ✨ Features
 
-- **Interactive Product Filtering:** Filter products dynamically by category and max price range.
-- **State Persistence:** Uses custom `useLocalStorage` React hook to retain filter choices upon browser refresh.
-- **Mobile Responsive:** Clean, modern layout built using Tailwind CSS that works seamlessly across all screen sizes.
-- **Modular Codebase:** Clean component-driven architecture separating UI components, mock datasets, and custom hooks.
-- **Dockerized Setup:** Multi-stage Docker setup with Nginx for fast and production-ready local deployment.
+- **Interactive Product Filtering:** Filter products dynamically by category and maximum price range in real-time.
+- **State Persistence:** Custom `useLocalStorage` React hook preserves user filter selections even after browser refreshes.
+- **Mobile Responsive Design:** Clean, modern layout constructed with Tailwind CSS that adapts seamlessly across mobile, tablet, and desktop viewports.
+- **Modular Codebase:** Clean separation of concerns featuring reusable components (`Header`, `FilterSidebar`, `ProductGrid`, `ProductCard`), central mock data, and custom hooks.
+- **Containerized Deployment:** Production-ready multi-stage Docker build served via Nginx for high performance and easy deployment.
 
 ---
 
@@ -18,13 +18,29 @@ A modern, fully mobile-responsive product landing page built with **React**, **T
 
 - **Frontend:** React.js, Tailwind CSS
 - **State Management:** Custom React Hooks (`useLocalStorage`)
-- **Containerization:** Docker, Docker Compose, Nginx
+- **Containerization & Web Server:** Docker, Docker Compose, Nginx
 
 ---
 
-## 🚀 Quick Start (Using Docker)
+## 📁 Project Structure
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR-USERNAME/ecommerce-landing-page.git](https://github.com/YOUR-USERNAME/ecommerce-landing-page.git)
-   cd ecommerce-landing-page
+```text
+ecommerce-landing-page/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── FilterSidebar.jsx
+│   │   ├── ProductGrid.jsx
+│   │   └── ProductCard.jsx
+│   ├── data/
+│   │   └── products.js
+│   ├── hooks/
+│   │   └── useLocalStorage.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── Dockerfile
+├── docker-compose.yml
+├── README.md
+└── package.json
