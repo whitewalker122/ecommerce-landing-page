@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
-  task-tracker:
+  web:
     build: .
     ports:
-      - "3000:80"
-    restart: always
+      - "80:80"
+    container_name: ecommerce-landing-page
